@@ -55,6 +55,8 @@ app.post("/uploadImage", (req, res) => {
     .catch((err) => res.status(500).send(err));
 });
 
+app.get("/favicon.ico", (req, res) => res.status(204).end());
+
 app.listen(port, () => {
   console.log(`Smart-Clothing is listening on port ${port}`);
 });
